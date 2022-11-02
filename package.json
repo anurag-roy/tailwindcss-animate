@@ -45,5 +45,16 @@
 	},
 	"lint-staged": {
 		"*.**": "prettier --write"
-	}
+	},
+	"directories": {
+		"doc": "docs"
+	},
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/anurag-roy/tailwindcss-animate.git"
+	},
+	"bugs": {
+		"url": "https://github.com/anurag-roy/tailwindcss-animate/issues"
+	},
+	"homepage": "https://github.com/anurag-roy/tailwindcss-animate#readme"
 }
