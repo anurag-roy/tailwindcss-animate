@@ -1,15 +1,12 @@
 const plugin = require("tailwindcss/plugin")
 
 function filterDefault(values) {
-	let x = Object.fromEntries(
+	return Object.fromEntries(
 		Object.entries(values).filter(([key]) => key !== "DEFAULT"),
 	)
-	console.log("Values are: ", values)
-	console.log("Returning: ", x)
-	return x
 }
 
-let x = plugin(
+module.exports = plugin(
 	({ addUtilities, matchUtilities, theme }) => {
 		addUtilities({
 			"@keyframes enter": theme("keyframes.enter"),
@@ -99,7 +96,7 @@ let x = plugin(
 		)
 
 		matchUtilities(
-			{ ease: (value) => ({ animationTimingFunction: value }) },
+			{ "anim-ease": (value) => ({ animationTimingFunction: value }) },
 			{ values: filterDefault(theme("animationTimingFunction")) },
 		)
 
@@ -189,5 +186,3 @@ let x = plugin(
 		},
 	},
 )
-
-console.log(filterDefault(theme("animationDuration")))

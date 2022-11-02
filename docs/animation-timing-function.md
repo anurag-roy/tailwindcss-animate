@@ -2,14 +2,12 @@
 
 > Utilities for controlling the timing function of CSS animations.
 
-| Class         | Properties                                                 |
-| ------------- | ---------------------------------------------------------- |
-| `ease-linear` | `animation-timing-function: normal;`                       |
-| `ease-in`     | `animation-timing-function: cubic-bezier(0.4, 0, 1, 1);`   |
-| `ease-out`    | `animation-timing-function: cubic-bezier(0, 0, 0.2, 1);`   |
-| `ease-in-out` | `animation-timing-function: cubic-bezier(0.4, 0, 0.2, 1);` |
-
-> **Note:** This is reusing the same classes as [`transition-timing-function`](https://tailwindcss.com/docs/transition-timing-function), this may change in the future if it turns out to cause friction.
+| Class              | Properties                                                 |
+| ------------------ | ---------------------------------------------------------- |
+| `anim-ease-linear` | `animation-timing-function: normal;`                       |
+| `anim-ease-in`     | `animation-timing-function: cubic-bezier(0.4, 0, 1, 1);`   |
+| `anim-ease-out`    | `animation-timing-function: cubic-bezier(0, 0, 0.2, 1);`   |
+| `anim-ease-in-out` | `animation-timing-function: cubic-bezier(0.4, 0, 0.2, 1);` |
 
 ## Basic Usage
 
@@ -18,10 +16,10 @@
 Use the `ease-{keyword}` utilities to control an element’s `animation-timing-function`.
 
 ```html
-<button class="animate-bounce ease-linear ...">Button A</button>
-<button class="animate-bounce ease-in ...">Button B</button>
-<button class="animate-bounce ease-out ...">Button C</button>
-<button class="animate-bounce ease-in-out ...">Button C</button>
+<button class="animate-bounce anim-ease-linear ...">Button A</button>
+<button class="animate-bounce anim-ease-in ...">Button B</button>
+<button class="animate-bounce anim-ease-out ...">Button C</button>
+<button class="animate-bounce anim-ease-in-out ...">Button C</button>
 ```
 
 ## Applying Conditionally
@@ -31,7 +29,7 @@ Use the `ease-{keyword}` utilities to control an element’s `animation-timing-f
 Tailwind lets you conditionally apply utility classes in different states using variant modifiers. For example, use `hover:ease-in-out` to only apply the `ease-in-out` utility on hover.
 
 ```html
-<div class="animate-bounce ease-linear hover:ease-in-out">
+<div class="animate-bounce anim-ease-linear hover:anim-ease-in-out">
 	<!-- ... -->
 </div>
 ```
@@ -43,7 +41,7 @@ For a complete list of all available state modifiers, check out the [Hover, Focu
 You can also use variant modifiers to target media queries like responsive breakpoints, dark mode, prefers-reduced-motion, and more. For example, use `md:ease-in-out` to apply the `ease-in-out` utility at only medium screen sizes and above.
 
 ```html
-<div class="animate-bounce ease-linear md:ease-in-out">
+<div class="animate-bounce anim-ease-linear md:anim-ease-in-out">
 	<!-- ... -->
 </div>
 ```
@@ -79,7 +77,7 @@ Learn more about customizing the default theme in the [theme customization](http
 If you need to use a one-off `animation-timing-function` value that doesn’t make sense to include in your theme, use square brackets to generate a property on the fly using any arbitrary value.
 
 ```html
-<div class="ease-[cubic-bezier(0.95,0.05,0.795,0.035)]">
+<div class="anim-ease-[cubic-bezier(0.95,0.05,0.795,0.035)]">
 	<!-- ... -->
 </div>
 ```

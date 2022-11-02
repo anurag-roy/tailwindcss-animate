@@ -1,6 +1,18 @@
-# `tailwindcss-animate`
+# `@anuragroy/tailwindcss-animate`
 
 > A Tailwind CSS plugin for creating beautiful animations.
+
+This is a fork of [Jamie Kyle's tailwindcss-animate plugin](https://github.com/jamiebuilds/tailwindcss-animate).
+
+I have just prefixed all the classes that were overlapping with Tailwind's transition utility ones, because I found they were adding unwanted styles and behaviour.
+
+Changed classes are `duration`, `delay` and `ease`.
+
+So for example
+
+- `duration-300` becomes `anim-duration-300`, etc.
+- `delay-150` becomes `anim-delay-150`, etc.
+- `ease-in` becomes `anim-ease-in`, etc.
 
 ```html
 <!-- Add an animated fade and zoom entrance -->
@@ -10,10 +22,10 @@
 <div class="animate-out slide-out-to-top slide-out-to-left">...</div>
 
 <!-- Control animation duration -->
-<div class="... duration-300">...</div>
+<div class="... anim-duration-300">...</div>
 
 <!-- Control animation delay -->
-<div class="... delay-150">...</div>
+<div class="... anim-delay-150">...</div>
 
 <!-- And so much more! -->
 ```
@@ -23,7 +35,7 @@
 Install the plugin from npm:
 
 ```sh
-npm install -D tailwindcss-animate
+npm install -D @anuragroy/tailwindcss-animate
 ```
 
 Then add the plugin to your `tailwind.config.js` file:
@@ -35,7 +47,7 @@ module.exports = {
 		// ...
 	},
 	plugins: [
-		require("tailwindcss-animate"),
+		require("@anuragroy/tailwindcss-animate"),
 		// ...
 	],
 }
@@ -68,12 +80,18 @@ module.exports = {
 
 #### Changing animation delay
 
-Use the `delay-{amount}` utilities to control an element’s `animation-delay`.
+Use the `anim-delay-{amount}` utilities to control an element’s `animation-delay`.
 
 ```html
-<button class="animate-bounce delay-150 duration-300 ...">Button A</button>
-<button class="animate-bounce delay-300 duration-300 ...">Button B</button>
-<button class="animate-bounce delay-700 duration-300 ...">Button C</button>
+<button class="animate-bounce anim-delay-150 anim-duration-300 ...">
+	Button A
+</button>
+<button class="animate-bounce anim-delay-300 anim-duration-300 ...">
+	Button B
+</button>
+<button class="animate-bounce anim-delay-700 anim-duration-300 ...">
+	Button C
+</button>
 ```
 
 Learn more in the [animation delay](/docs/animation-delay.md) documentation.
@@ -93,12 +111,12 @@ Learn more in the [animation direction](/docs/animation-direction.md) documentat
 
 #### Changing animation duration
 
-Use the `duration-{amount}` utilities to control an element’s `animation-duration`.
+Use the `anim-duration-{amount}` utilities to control an element’s `animation-duration`.
 
 ```html
-<button class="animate-bounce duration-150 ...">Button A</button>
-<button class="animate-bounce duration-300 ...">Button B</button>
-<button class="animate-bounce duration-700 ...">Button C</button>
+<button class="animate-bounce anim-duration-150 ...">Button A</button>
+<button class="animate-bounce anim-duration-300 ...">Button B</button>
+<button class="animate-bounce anim-duration-700 ...">Button C</button>
 ```
 
 Learn more in the [animation duration](/docs/animation-duration.md) documentation.
@@ -141,13 +159,13 @@ Learn more in the [animation play state](/docs/animation-play-state.md) document
 
 #### Changing animation timing function
 
-Use the `ease-{keyword}` utilities to control an element’s `animation-timing-function`.
+Use the `anim-ease-{keyword}` utilities to control an element’s `animation-timing-function`.
 
 ```html
-<button class="animate-bounce ease-linear ...">Button A</button>
-<button class="animate-bounce ease-in ...">Button B</button>
-<button class="animate-bounce ease-out ...">Button C</button>
-<button class="animate-bounce ease-in-out ...">Button C</button>
+<button class="animate-bounce anim-ease-linear ...">Button A</button>
+<button class="animate-bounce anim-ease-in ...">Button B</button>
+<button class="animate-bounce anim-ease-out ...">Button C</button>
+<button class="animate-bounce anim-ease-in-out ...">Button C</button>
 ```
 
 Learn more in the [animation timing function](/docs/animation-timing-function.md) documentation.

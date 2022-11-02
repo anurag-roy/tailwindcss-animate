@@ -1,5 +1,5 @@
 {
-	"name": "tailwindcss-animate",
+	"name": "@anuragroy/tailwindcss-animate",
 	"version": "1.0.5",
 	"description": "A Tailwind CSS plugin for creating beautiful animations.",
 	"main": "index.js",
@@ -32,7 +32,7 @@
 		"translate",
 		"scale"
 	],
-	"author": "Jamie Kyle <me@thejameskyle.com>",
+	"author": "Jamie Kyle <me@thejameskyle.com>, Anurag Roy <anuragroy@duck.com>",
 	"license": "MIT",
 	"peerDependencies": {
 		"tailwindcss": ">=3.0.0 || insiders"
