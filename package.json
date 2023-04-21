@@ -6,6 +6,7 @@
 	"files": [
 		"index.js"
 	],
+	"types": "index.d.ts",
 	"scripts": {
 		"format": "prettier --write '**'",
 		"format:check": "prettier --check '**'",
