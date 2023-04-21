@@ -20,9 +20,15 @@
 Use the `anim-delay-{amount}` utilities to control an element’s `animation-delay`.
 
 ```html
-<button class="animate-bounce anim-delay-150 duration-300 ...">Button A</button>
-<button class="animate-bounce anim-delay-300 duration-300 ...">Button B</button>
-<button class="animate-bounce anim-delay-700 duration-300 ...">Button C</button>
+<button class="animate-bounce anim-delay-150 anim-duration-300 ...">
+	Button A
+</button>
+<button class="animate-bounce anim-delay-300 anim-duration-300 ...">
+	Button B
+</button>
+<button class="animate-bounce anim-delay-700 anim-duration-300 ...">
+	Button C
+</button>
 ```
 
 ## Applying Conditionally
@@ -32,7 +38,7 @@ Use the `anim-delay-{amount}` utilities to control an element’s `animation-del
 Tailwind lets you conditionally apply utility classes in different states using variant modifiers. For example, use `hover:anim-delay-0` to only apply the `anim-delay-0` utility on hover.
 
 ```html
-<div class="animate-bounce duration-300 anim-delay-150 hover:anim-delay-0">
+<div class="animate-bounce anim-duration-300 anim-delay-150 hover:anim-delay-0">
 	<!-- ... -->
 </div>
 ```
@@ -44,7 +50,7 @@ For a complete list of all available state modifiers, check out the [Hover, Focu
 You can also use variant modifiers to target media queries like responsive breakpoints, dark mode, prefers-reduced-motion, and more. For example, use `md:anim-delay-0` to apply the `anim-delay-0` utility at only medium screen sizes and above.
 
 ```html
-<div class="animate-bounce duration-300 anim-delay-150 md:anim-delay-0">
+<div class="animate-bounce anim-duration-300 anim-delay-150 md:anim-delay-0">
 	<!-- ... -->
 </div>
 ```

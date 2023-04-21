@@ -13,7 +13,7 @@
 
 ### Changing animation timing function
 
-Use the `ease-{keyword}` utilities to control an element’s `animation-timing-function`.
+Use the `anim-ease-{keyword}` utilities to control an element’s `animation-timing-function`.
 
 ```html
 <button class="animate-bounce anim-ease-linear ...">Button A</button>
@@ -26,7 +26,7 @@ Use the `ease-{keyword}` utilities to control an element’s `animation-timing-f
 
 ### Hover, focus, and other states
 
-Tailwind lets you conditionally apply utility classes in different states using variant modifiers. For example, use `hover:ease-in-out` to only apply the `ease-in-out` utility on hover.
+Tailwind lets you conditionally apply utility classes in different states using variant modifiers. For example, use `hover:anim-ease-in-out` to only apply the `anim-ease-in-out` utility on hover.
 
 ```html
 <div class="animate-bounce anim-ease-linear hover:anim-ease-in-out">
@@ -38,7 +38,7 @@ For a complete list of all available state modifiers, check out the [Hover, Focu
 
 ### Breakpoints and media queries
 
-You can also use variant modifiers to target media queries like responsive breakpoints, dark mode, prefers-reduced-motion, and more. For example, use `md:ease-in-out` to apply the `ease-in-out` utility at only medium screen sizes and above.
+You can also use variant modifiers to target media queries like responsive breakpoints, dark mode, prefers-reduced-motion, and more. For example, use `md:anim-ease-in-out` to apply the `anim-ease-in-out` utility at only medium screen sizes and above.
 
 ```html
 <div class="animate-bounce anim-ease-linear md:anim-ease-in-out">

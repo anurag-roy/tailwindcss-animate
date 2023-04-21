@@ -29,10 +29,10 @@ Use the `anim-duration-{amount}` utilities to control an element’s `animation-
 
 ### Hover, focus, and other states
 
-Tailwind lets you conditionally apply utility classes in different states using variant modifiers. For example, use `hover:duration-0` to only apply the `duration-0` utility on hover.
+Tailwind lets you conditionally apply utility classes in different states using variant modifiers. For example, use `hover:anim-duration-0` to only apply the `anim-duration-0` utility on hover.
 
 ```html
-<div class="animate-bounce anim-duration-300 hover:duration-0">
+<div class="animate-bounce anim-duration-300 hover:anim-duration-0">
 	<!-- ... -->
 </div>
 ```
@@ -41,10 +41,10 @@ For a complete list of all available state modifiers, check out the [Hover, Focu
 
 ### Breakpoints and media queries
 
-You can also use variant modifiers to target media queries like responsive breakpoints, dark mode, prefers-reduced-motion, and more. For example, use `md:duration-0` to apply the `duration-0` utility at only medium screen sizes and above.
+You can also use variant modifiers to target media queries like responsive breakpoints, dark mode, prefers-reduced-motion, and more. For example, use `md:anim-duration-0` to apply the `anim-duration-0` utility at only medium screen sizes and above.
 
 ```html
-<div class="animate-bounce anim-duration-150 md:duration-0">
+<div class="animate-bounce anim-duration-150 md:anim-duration-0">
 	<!-- ... -->
 </div>
 ```
