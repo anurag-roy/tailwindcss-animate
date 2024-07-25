@@ -1,7 +1,0 @@
-LICENSE
-.*ignore
-.husky/*
-*.sh
-
-# dont format translations
-/docs/zh/**

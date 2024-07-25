@@ -8,9 +8,8 @@
 	],
 	"types": "index.d.ts",
 	"scripts": {
-		"format": "prettier --write '**'",
-		"format:check": "prettier --check '**'",
-		"prepare": "husky install"
+		"format": "prettier --write '**/*.{js,ts,json,md}'",
+		"format:check": "prettier --check '**/*.{js,ts,json,md}'"
 	},
 	"keywords": [
 		"tailwind",
@@ -39,16 +38,8 @@
 		"tailwindcss": ">=3.0.0 || insiders"
 	},
 	"devDependencies": {
-		"husky": "^7.0.4",
-		"lint-staged": "^12.3.4",
-		"prettier": "^2.5.1",
-		"tailwindcss": "^3.0.22"
-	},
-	"lint-staged": {
-		"*.**": "prettier --write"
-	},
-	"directories": {
-		"doc": "docs"
+		"prettier": "^3.3.3",
+		"tailwindcss": "^3.4.7"
 	},
 	"repository": {
 		"type": "git",
@@ -57,5 +48,6 @@
 	"bugs": {
 		"url": "https://github.com/anurag-roy/tailwindcss-animate/issues"
 	},
-	"homepage": "https://github.com/anurag-roy/tailwindcss-animate#readme"
+	"homepage": "https://github.com/anurag-roy/tailwindcss-animate#readme",
+	"packageManager": "pnpm@9.6.0+sha512.38dc6fba8dba35b39340b9700112c2fe1e12f10b17134715a4aa98ccf7bb035e76fd981cf0bb384dfa98f8d6af5481c2bef2f4266a24bfa20c34eb7147ce0b5e"
 }
